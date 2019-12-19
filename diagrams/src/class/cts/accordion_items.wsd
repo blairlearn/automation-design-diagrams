@@ -1,0 +1,13 @@
+@startuml
+class cts.components.accordion_items.Description{
+    - title : WebElement
+    - body : WebElement
+    - descriptionBody : BlobOfText
+
+    +isExpanded() : Boolean
+    +getTitle() : String
+    +getField(field : String) : String 
+}
+cts.components.accordion_items.Description <-- AccordionItem
+
+@enduml
