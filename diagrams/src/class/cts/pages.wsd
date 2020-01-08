@@ -25,7 +25,10 @@ package cts {
 
     '' General cts page functionality (Mainly "is the react app running?")
     class CTSPage {
-        isHeaderDisplayed(): boolean
+        +isHeaderDisplayed(): boolean
+        +clickSubmit() : SearchNavigationResult
+        +hitEnterKey() : SearchNavigationResult
+
     }
     CTSPage <|-- PageObjectBase
 
